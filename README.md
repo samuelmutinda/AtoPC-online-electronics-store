@@ -1,2 +1,1 @@
-# web
-# AtoPC-online-electronics-store
+# AtoPC-online-electronics-store using flask back-end
