@@ -1,0 +1,80 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>iPhone Xr</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+
+<h2><br>Configure your iPhone SE<br><br></h2>
+<div class = "configandcheckout">
+    <div class="configs">
+        <form method="POST" class="configcolor">
+            <h2>Pick a color:</h2><br>
+            <input type="radio" id="configbuttons" name="secolor" value="red">
+            <label for="red">(PRODUCT)RED</label><br><br>
+            <input type="radio" id="configbuttons" name="secolor" value="silver">
+            <label for="silver">Silver</label><br><br>
+            <input type="radio" id="configbuttons" name="secolor" value="black">
+            <label for="black">Black</label><br><br>
+            <br>
+            <br>
+            <h2>Choose your storage:</h2><br>
+            <input type="radio" id="configbuttons" name="sestorage" value="64gb">
+            <label for="64gb">64GB</label><br><br>
+            <input type="radio" id="configbuttons" name="sestorage" value="128gb">
+            <label for="128gb">128GB</label><br><br>
+            <input type="radio" id="configbuttons" name="sestorage" value="256gb">
+            <label for="256gb">256GB</label><br><br>
+            <input type="radio" id="configbuttons" name="sestorage" value="512gb">
+            <label for="512gb">512GB<br><br></label>
+            <div class="submitencompass">
+                <div class="submitbutton"><br><br>
+                    <input type="submit"></input>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<br>
+<div class="row1" >
+    <br>
+    <div class="item1">
+        <img src="static/images/{{ 'se2020black.png'}}" width="243.5px" width="180.5px" >
+        <div class="row1description">
+            <br>
+            Black<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="item1">
+        <img src="static/images/{{ 'se2020.png'}}" width="243.5px" width="180.5px">
+        <div class="row1description">
+            <br>
+            Silver<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="item1">
+        <img src="static/images/{{ 'se2020red.png'}}" width="243.5px" width="180.5px">
+        <div class="row1description">
+            <br>
+            (PRODUCT)RED<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

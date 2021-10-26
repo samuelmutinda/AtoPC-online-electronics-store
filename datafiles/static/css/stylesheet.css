@@ -1,0 +1,578 @@
+html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: small;
+}
+a{
+    text-decoration: none;
+    transform: translateX(-50%) translateY(-50%);
+}
+.coollink::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: grey;
+    transition: width .3s;
+}
+.coollink:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+header{
+    background-color: white;
+}
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+nav{
+    margin: 0;
+    margin-left: -110px;
+    /* overflow: hidden;
+    position: fixed; 
+    top: 0;
+    width: 100%; */
+}
+nav ul{
+    background-color: white;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    margin: auto;
+    margin-left: 40px;
+    padding: 20px 8px;
+    font-size: medium;
+    font-weight: 600;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+    margin-top: -25px;
+    transition: transform 250ms, opacity 400ms;
+}
+nav a:hover{
+    transform: scale(1.2);
+    opacity: 100%;
+}
+.smartphones{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: xx-large;
+}
+.gs21{
+    text-align: center;
+    top: 25%;
+    color: black;
+    padding: 20px;
+}
+.gs21 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.pixel5{
+    text-align: center;
+    top: 25%;
+    color: black;
+    padding: 20px;
+}
+.pixel5 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.tradein{
+    font-size: 45%;
+}
+.gopro{
+    font-weight: 400;
+}
+.off{
+    font-size: 45%;
+}
+.from999{
+    font-size: 45%;
+}
+.buy{
+    font-size: 55%;
+    color: blue;
+    font-weight: 600;
+}
+.teampixel{
+    font-weight: 400;
+}
+.join{
+    font-size: 45%;
+}
+.pixelavailable{
+    font-size: 45%;
+}
+li img{
+    opacity: 0.9;
+    margin-bottom: -4px;
+}
+.laptops{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: xx-large;
+    position: relative
+}
+.laptops img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+.laptopstext{
+    text-align: center;
+    top: 25%;
+    color: black;
+    padding: 20px;
+}
+.macintro{
+    font-weight: 400;
+}
+.newmac{
+    font-size: 45%;
+}
+.macinstock{
+    font-size: 45%;
+}
+.airprice{
+    font-size: 45%;
+}
+.proprice{
+    font-size: 45%;
+}
+
+.audio{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: xx-large;
+    position: relative
+}
+.audio img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+.pixelbuds{
+    text-align: center;
+    top: 25%;
+    color: black;
+    padding: 20px;
+}
+.pixelbudsintro{
+    font-weight: 400;
+}
+.pixelbudsdescription{
+    font-size: 45%;
+}
+.pixelbudsprice{
+    font-size: 45%;
+}
+.beats{
+    text-align: center;
+    top: 25%;
+    color: black;
+    padding: 20px;
+}
+.beats img{
+    width: 50%;
+    margin-top: 30px;
+}
+.beatsintro{
+    font-weight: 400;
+}
+.beatsdescription{
+    font-size: 45%;
+}
+.beatsprice{
+    font-size: 45%;
+}
+.shop{
+    text-align: center;
+    font-size: xx-large;
+}
+.googlelogo img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+.applelogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5%;
+}
+.boxcontainer{
+    margin:auto;
+    margin-bottom: -10.5%;
+    width: 300px;
+    height: 35px;
+    border: 2px solid black;
+    opacity: 1;
+    padding: 0px 0px;
+    border-radius: 50px;
+}
+.elementscontainer{
+    width: 100%;
+    height: 50%;
+    vertical-align: middle;
+}
+.search{
+    border: none;
+    height: 50%;
+    width: 80%;
+    padding: 9px 0px;
+    border-radius: 0px;
+    font-size: 18;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 550;
+    margin-left: -15px;
+    margin-top: -2px;
+}
+.search:focus{
+    outline: none;
+} 
+.searchbtn{
+    opacity: 1;
+    margin-bottom: -1px;
+    margin-left: -30px;
+}
+footer{
+    width: 100%;
+    padding: 0;
+    margin: 0px;
+    font-size: 16;
+    background-color: rgb(236, 236, 236);
+}
+.footer ul{
+    list-style: none;
+    padding-left: 0;
+}
+.footer a{
+    text-decoration: none;
+}
+.footerblocks{
+    margin-left: 250px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footerleft{
+    margin-top: 30px;
+}
+.socials{
+    margin-top: 30px;
+}
+.footermid{
+    margin-top: 30px;
+}
+.footerright{
+    margin-top: 30px;
+}
+.footerbottom{
+    text-align: center;
+    /* margin-bottom: 50px; */
+    font-size: 16;
+}
+.footer a{
+    color: black;
+}
+.pageheaders{
+    text-align: center;
+}
+.row1{
+    margin-left: 110px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.row11{
+    margin-left: 180px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.row12{
+    margin-left: 180px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.row1description{
+    text-align: center;
+    font-size: medium;
+}
+.buyitem{
+    color: blue;
+    font-weight: 900;
+}.buyitem a{
+    color: blue;
+    font-weight: 900;
+}
+.row2{
+    margin-left: 150px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.row2description{
+    text-align: center;
+    font-size: medium;
+}
+.row3{
+    margin-left: 150px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.columnlogos{
+    margin-left: 150px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-self: center;
+}
+.samsung{
+    margin-top: 130px;
+}
+.google{
+    margin-top: 110px;
+}
+.oneplus{
+    margin-top: 110px;
+}
+.razer{
+    margin-top: 110px;
+}
+.microsoft{
+    margin-top: 90px;
+}
+.loginpane{
+    font-family: 'Ubuntu', sans-serif;
+}
+#usericon{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 2%;
+}
+.loginform{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    height: auto;
+}
+.formFooter{
+    text-align: center;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif; 
+}
+section
+{
+    position: relative;
+    width: 800px;
+    height: auto;
+    display: flex;
+    margin-left: 550px;
+}
+section .contentbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+}
+section .contentbox .formbox{
+    width: 60%;
+}
+section .contentbox .formbox h2{
+    color: black;
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    border-bottom: 4px solid black;
+    display: inline-block;
+    letter-spacing: 1px;
+    text-align: center;
+}
+section .contentbox .formbox .inputbox{
+    margin-bottom: 20px;
+}
+section .contentbox .formbox .inputbox span{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+section .contentbox .formbox .inputbox input{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 2px solid black;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: black;
+    background: transparent;
+    border-radius: 30px;
+}
+section .contentbox .formbox .inputbox input[type="submit"]{
+    background: white;
+    color: black;
+    outline: none;
+    border: 2px solid black;
+    font-weight: 500;
+    cursor: pointer;
+}
+section .contentbox .formbox .inputbox input[type="submit"]:hover{
+    background: rgb(197, 197, 197);
+}
+section .contentbox .formbox .remember{
+    margin-bottom: 10px;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+}
+section .contentbox .formbox p{
+    font-size: 16px;
+    color: black;
+}
+section .contentbox .formbox p a{
+    font-size: 16px;
+    color: blue;
+    text-decoration: none;
+}
+.x{
+    font-size: 16px;
+    list-style-type: none;
+}
+.deliverycompany{
+    font-size: 16px;
+    list-style-type: none;
+}
+.deliverycompany ul{
+    list-style: none;
+}
+.welcomedashboard{
+    text-align: center;
+}
+.errmsg{
+    font-size: 14px;
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+.configs{
+    text-align: center;
+}
+.configandcheckout{
+    margin-bottom: 50px;
+    text-align: center;
+}
+.configandcheckout a{
+    text-decoration: none;
+    color: blue;
+    font-size: large;
+    font-weight: 600;
+}
+.configs{
+    /* margin-top: 50px; */
+    margin-left: 400px;
+    margin-right: 400px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.afterbox{
+    text-align: center;
+}
+.itemdetails{
+    text-align: center;
+    font-size: large;
+}
+#buyform{
+    margin-top: 0px;
+}
+.row112pro{
+    margin-left: 120px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.rows21ultra{
+    margin-left: 350px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.row212pro{
+    margin-left: 200px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.image2{
+    margin-right: 200px;
+}
+.row1s21{
+    margin-left: 210px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate;
+    border-spacing: 100px 10px;
+}
+td{
+    text-align: center;
+}
+.beats{
+    margin-top: 40px;
+    margin-right: 80px;
+}
+.adstock{
+    text-align: center;
+}
+.addstock a{
+    text-decoration: none;
+    color: black;
+}
+.addstock h3{
+    text-align: center;
+}
+.addstock p{
+    text-align: center;
+    font-size: medium;
+}

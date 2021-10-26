@@ -1,0 +1,68 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>Galaxy Buds Live</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+
+<h2><br>Configure your Galaxy Buds Live<br><br></h2>
+<div class = "configandcheckout">
+    <div class="configs">
+        <form method="POST" class="configcolor">
+            <h2>Pick a color:</h2><br>
+            <input type="radio" id="configbuttons" name="budslivecolor" value="mystic bronze">
+            <label for="mystic bronze">Mystic bronze</label><br><br>
+            <input type="radio" id="configbuttons" name="budslivecolor" value="mystic white">
+            <label for="mystic white">Mystic white</label><br><br>
+            <input type="radio" id="configbuttons" name="budslivecolor" value="mystic black">
+            <label for="mystic black">Mystic black</label><br><br>
+                <div class="submitbutton"><br><br>
+                    <input type="submit"></input>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<br>
+<div class="row1">
+    <br>
+    <div class="item1">
+        <img src="static/images/{{ 'budsliveblack.png'}}" width="206.1997px" height="auto"">
+        <div class="row1description">
+            <br>
+            Mystic black<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="item1">
+        <img src="static/images/{{ 'budslivewhite.webp'}}" width="206.1997px" height="auto"">
+        <div class="row1description">
+            <br>
+            Mystic white<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="item1">
+        <img src="static/images/{{ 'budslivebronze.jpg'}}" width="206.1997px" height="auto" style="margin-left: 100px;">
+        <div class="row1description">
+            <br>
+            Mystic bronze<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

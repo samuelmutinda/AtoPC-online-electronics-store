@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="electronics store">
+        <title>Admin</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/stylesheet.css') }}">
+    </head>
+    <header>
+        <div class="bar">
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('adminpage') }}" class="coollink"><img src="static/images/{{ 'outline_home_black_24dp.png' }}"> Main dashboard</a></li>
+                    <li><a href="{{ url_for('adminsmartphones') }}" class="coollink">Manage Smartphones</a></li>
+                    <li><a href="{{ url_for('adminlaptops') }}" class="coollink">Manage Laptops</a></li>
+                    <li><a href="{{ url_for('adminaudio') }}" class="coollink">Manage Audio</a></li>
+                    <li><a href="{{ url_for('logoutpage') }}" class="coollink">Log out &nbsp;<img src="static/images/{{ 'logout.svg'}}" alt="logout"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <body>
+        {% with messages = get_flashed_messages(with_categories=true)%}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <p class="errmsg">{{ message }}</p><br>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        {% block body %}{% endblock %}
+        <div class="addstock">
+            <h2>Add stock: Select a model</h2><br>
+            <h3>1. Apple:</h3><br>
+            <p><a href="{{ url_for('addairpods') }}">AirPods</a></p><br>
+            <p><a href="{{ url_for('addairpodspro') }}">AirPods Pro</a></p><br>
+            <h3>2. Samsung:</h3><br>
+            <p><a href="{{ url_for('addbudslive') }}">Galaxy buds live</a></p><br>
+            <p><a href="{{ url_for('addbudsplus') }}">Galaxy buds plus</a></p><br>
+            <h3>3. Google:</h3><br>
+            <p><a href="{{ url_for('addpixelbuds') }}">Pixel buds</a></p><br>
+            <h3>3. Beats:</h3><br>
+            <p><a href="{{ url_for('addpowerbeats') }}">Powerbeats Pro</a></p><br>
+            <p><a href="{{ url_for('addbeatssolo') }}">Beats solo pro</a></p><br>
+        </div>
+        <br>
+        <br>
+        <table class="table table-sm" style="justify-content: center;">
+            <h3 style="text-align: center;">Current Stock:</h3>
+            <thead>
+              <tr class="spaceUnder"></tr>
+                <th scope="col">Audio device name</th>
+                <th scope="col">Color</th>
+                <th scope="col">Cash price</th>
+                <th scope="col">Contract price</th>
+              </tr>
+            </thead>
+            {% for i in range(audio| length) %}
+            <tbody>
+              <tr class="spaceUnder">
+                <td>{{  audio[i].audioname }}</td>
+                <td>{{  audio[i].audiocolor }}</td>
+                <td>{{  audio[i].cash_price|int }}</td>
+                <td>{{  audio[i].contract_price|int }}</td>
+              </tr>
+            </tbody>
+            {% endfor %}
+        </table>
+    </body>
+    <footer class="footer">
+        <div class="footerblocks">
+            <div class="footerleft">
+                <h2>About</h2><br>
+                <p>AtoPc is an electronics distribution company,<br>
+                    with a total of 21 retail outlets countrywide<br>
+                    and with numerous affiliate sub-agents. We<br>
+                    have strong and competent partnerships with<br>
+                    industry leading consumer electronics<br>
+                    manufacturers for the distribution of gadgets<br>
+                    and handling of in warrant devices. Some of<br>
+                    our partners include Apple, Samsung and<br>
+                    microsoft. All appliances sold at our stores<br>
+                    including the online store are genuine and in<br>
+                    brand new condition.
+                </p>
+            </div>
+            <div class="socials">
+                <h2>Socials</h2><br>
+                <a href="#">Facebook<i class="facebook"></i></a><br><br>
+                <a href="#">Instagram<i class="instagram"></i></a><br><br>
+                <a href="#">Twitter<i class="twitter"></i></a><br><br>
+                <a href="#">Whatsapp Business<i class="whatsappbusiness"></i></a><br><br>
+                <a href="#">Reddit<i class="reddit"></i></a><br>
+            </div>
+            <div class="footerright">
+                <h2>Address</h2><br>
+                <div class="box">
+                    <a href="#">DA15 9PS Westlands</a><br><br>
+                    <a href="#">Nairobi</a><br><br>
+                    <a href="#">Kenya</a>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div class="footerbottom">
+            <br>
+            Copyright © 2021 AtoPc Inc. All rights reserved.
+            <br>
+            <br>
+        </div>
+        {% block footer %}{% endblock %}
+    </footer>
+</html>

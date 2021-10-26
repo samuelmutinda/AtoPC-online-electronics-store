@@ -1,0 +1,91 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>base s21</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+
+<h2><br>Configure your S21<br><br></h2>
+<div class = "configandcheckout">
+    <div class="configs">
+        <form method="POST" class="configcolor">
+            <h2>Pick a color:</h2><br>
+            <input type="radio" id="configbuttons" name="note10color" value="aura glow">
+            <label for="aura glow">Aura glow</label><br><br>
+            <input type="radio" id="configbuttons" name="note10color" value="aura white">
+            <label for="aura white">Aura white</label><br><br>
+            <input type="radio" id="configbuttons" name="note10color" value="aura black">
+            <label for="aura black">Aura black</label><br><br>
+            <input type="radio" id="configbuttons" name="note10color" value="aura blue">
+            <label for="aura blue">Aura blue</label><br><br>
+            <br>
+            <br>
+            <h2>Choose your storage:</h2><br>
+            <input type="radio" id="configbuttons" name="note10storage" value="128gb">
+            <label for="128gb">128GB</label><br><br>
+            <input type="radio" id="configbuttons" name="note10storage" value="256gb">
+            <label for="256gb">256GB</label><br><br>
+            <input type="radio" id="configbuttons" name="note10storage" value="512gb">
+            <label for="512gb">512GB<br><br></label>
+            <div class="submitencompass">
+                <div class="submitbutton"><br><br>
+                    <input type="submit"></input>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<br>
+<div class="row1s21" >
+    <br>
+    <div class="item1">
+        <img src="static/images/{{ 'aurablue.jpg'}}" height="373.5px" width="380.5px">
+        <div class="row1description">
+            <br>
+            Aura blue<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="item1">
+        <img src="static/images/{{ 'aurablack.png'}}" height="373.5px" width="250.5px">
+        <div class="row1description">
+            <br>
+            Aura black<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
+<div class="row212pro" >
+    <div class="item1" style="margin-right: 320px;">
+        <img src="static/images/{{ 'aurawhite.jpg'}}" height="373.5px" width="380.5px">
+        <div class="row1description">
+            <br>
+            Aura white<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="item1" style="margin-left: 80px;">
+        <img src="static/images/{{ 'note10back.png'}}" height="373.5px" width="180.5px">
+        <div class="row1description">
+            <br>
+            Aura glow<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

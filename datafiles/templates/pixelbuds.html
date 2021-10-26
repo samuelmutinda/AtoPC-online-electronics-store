@@ -1,0 +1,39 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>pixelbuds</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<div class="pageheaders"><h1>Shop Google Pixel Buds</h1><br></div>
+<div class="page1">
+    <div class="row1" style="justify-content: center;">
+        <br>
+        <div class="item1">
+            <a href="{{ url_for('buypixelbuds') }}"><img src="static/images/{{ 'pixelbuds2.png'}}" height="275.697px" width="206.1997px" style="margin-left: 35px;"></a>
+            <div class="description" style="text-align: center;font-size: medium;margin-right: 100px;">
+                <br>
+                Google Pixel Buds<br><br>
+                Automatic switching<br><br>
+                Sweat and water resistant<br><br>
+                Up to 5 hours listening time<br><br>
+                Wireless Charging Case<br><br>
+                Seamless integration with oogle assistant<br><br>
+                <div class="buyitem"><a href="{{ url_for('buypixelbuds') }}">Ksh20,000 or<br><br>Ksh1,667 per month<br><br>Buy ></a></div>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

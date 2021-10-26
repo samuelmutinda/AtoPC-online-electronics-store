@@ -1,0 +1,68 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>Galaxy Buds+</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+
+<h2><br>Configure your Galaxy Buds+<br><br></h2>
+<div class = "configandcheckout">
+    <div class="configs">
+        <form method="POST" class="configcolor">
+            <h2>Pick a color:</h2><br>
+            <input type="radio" id="configbuttons" name="budspluscolor" value="blue">
+            <label for="blue">Blue</label><br><br>
+            <input type="radio" id="configbuttons" name="budspluscolor" value="white">
+            <label for="white">White</label><br><br>
+            <input type="radio" id="configbuttons" name="budspluscolor" value="black">
+            <label for="black">Black</label><br><br>
+                <div class="submitbutton"><br><br>
+                    <input type="submit"></input>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<br>
+<div class="row1">
+    <br>
+    <div class="item1">
+        <img src="static/images/{{ 'buds+black.png'}}" width="300px" height="auto" style="margin-top: 75px;">
+        <div class="row1description">
+            <br>
+            Black<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="item1">
+        <img src="static/images/{{ 'buds+white.jpg'}}" width="350px" height="auto" style="margin-top: 75px;">
+        <div class="row1description">
+            <br>
+            White<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="item1">
+        <img src="static/images/{{ 'buds+.png'}}" width="300px" height="auto" style="margin-top: 75px;margin-left: 50px;">
+        <div class="row1description" style="margin-left: 40px;">
+            <br>
+            Blue<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

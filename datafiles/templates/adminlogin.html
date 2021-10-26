@@ -1,0 +1,43 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>Admin login</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<section>
+    <div class="contentbox">
+        <div class="formbox">
+            <h2>Admin Login</h2>
+            <form method="POST">
+                {{ form.hidden_tag() }}
+                <div class="inputbox">
+                    <span>Admin Username</span>
+                    {{ form.username(class="form-control") }}
+                </div>
+                <div class="inputbox">
+                    <span>Admin Password</span>
+                    {{ form.password(class="form-control") }}
+                </div>
+                <div class="remember">
+                    <label><input type="checkbox" name=""> Remember me</label>
+                </div>
+                <div class="inputbox">{{ form.submit(class="btn btn-lg btn-block btn-primary") }}</div>
+                <div class="inputbox">
+                    <p>New employee? <a href="{{ url_for('adminregister') }}">Register as admin</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

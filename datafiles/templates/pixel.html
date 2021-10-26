@@ -1,0 +1,69 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>pixel</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<div class="pageheaders"><h1>Shop pixel</h1><br><br></div>
+<div class="iphonepage1">
+    <div class="row1" style="justify-content: center;">
+        <br>
+        <div class="item1">
+            <a href="{{ url_for('pixel4page') }}"><img src="static/images/{{ 'pixel4.png'}}" style="margin-left: 100px;margin-top: 20px;" height="323.5px" width="273.5px"></a>
+            <div class="row1description" style="margin-left: 100px;">
+                <br>
+                Google Pixel 4<br><br>
+                5.4" 90Hz OLED display<br><br>
+                Qualcomm Snapdragon 855<br><br>
+                4G LTE<br><br>
+                Dual 12mp Cameras<br><br>
+                Clearly White, Just Black, Oh So Orange<br><br>
+                <div class="buyitem">From Ksh50,000 or<br><br>Ksh4,167 per month<br><br><a href="{{ url_for('pixel4page') }}">Buy ></a></div>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="item1">
+            <a href="{{ url_for('pixel4apage') }}"><img src="static/images/{{ 'pixel4a.png'}}" height="343.5px" width="280.5px"></a>
+            <div class="row1description">
+                <br>
+                Google Pixel 4a<br><br>
+                6.2" 60Hz OLED display<br><br>
+                Qualcomm Snapdragon 765G<br><br>
+                5G capable<br><br>
+                Dual 12mp Camera<br><br>
+                Just Black, Clearly white<br><br>
+                <div class="buyitem">From Ksh40,000 or<br><br>Ksh3,334 per month<br><br><a href="{{ url_for('pixel4apage') }}">Buy ></a></div>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="item1">
+            <a href="{{ url_for('pixel5page') }}"><img src="static/images/{{ 'pixelback.png'}}" width="163.5px" width="110.5px" style="margin-right: 100px;margin-top: 10px;"></a>
+            <div class="row1description" style="margin-right: 90px;">
+                <br>
+                Google Pixel 5<br><br>
+                6.0" 90Hz OLED display<br><br>
+                Qualcomm Snapdragon 765G<br><br>
+                5G capable<br><br>
+                Dual 16mp Cameras<br><br>
+                Just Black, Sorta Sage<br><br>
+                <div class="buyitem">From Ksh70,000<br><br>or Ksh5,834 per month<br><br><a href="{{ url_for('pixel5page') }}">Buy ></a></div>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

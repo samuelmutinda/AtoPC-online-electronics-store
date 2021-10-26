@@ -1,0 +1,56 @@
+{%extends 'base.html'%}
+
+{% block head %}
+<title>Razer</title>
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="shop">Shop R Λ Z Ξ R<br><br></div>
+    <div class="phonepicks">
+        <div class="row1" style="justify-content: center;">
+            <br>
+            <div class="item1">
+                <a href="{{ url_for('bladestealth') }}"><img src="static/images/{{ 'blade13black.png'}}" style="margin-top: 20px;margin-left: 50px;" height="253.6254px" width="402.9663px"></a>
+                <div class="row1description" style="margin-left: 50px;">
+                    <br>
+                    R Λ Z Ξ R blade stealth 13<br><br>
+                    13.3" 60Hz 4K Touch, 13.3" 120Hz Full HD or<br><br>13.3" 60Hz OLED Full HD Touch<br><br>
+                    11th Gen Intel® Core™ i7-1165G7 Quad-Core<br><br>
+                    NVIDIA® GeForce GTX 1650 Ti Max-Q (4GB GDDR6 VRAM)<br><br>
+                    16GB/32GB dual-channel LPDDR4x RAM<br><br>	
+                    512GB/1TB/2TB SSD<br><br>
+                    Black, Mercury white<br><br>
+                    <div class="buyitem">From Ksh180,000 or<br><br>Ksh15,000 per month<a href="{{ url_for('bladestealth') }}"><br><br>Buy ></a></div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="item1">
+                <a href="{{ url_for('blade15') }}"><img src="static/images/{{ 'bladestealthblack.jpg'}}" style="margin-top: 20px;margin-right: 50px;" height="253.6254px" width="402.9663px"></a>
+                <div class="row1description" style="margin-right: 50px;">
+                    <br>
+                    R Λ Z Ξ R blade 15<br><br>
+                    FHD 144Hz, FHD 360Hz, QHD 240Hz (G-SYNC) or<br><br> 4K OLED Touch QHD 165Hz<br><br>
+                    11th Gen Intel® Core™ i7(H Series)<br><br>
+                    GeForce RTX™ 3000 series GPUs<br><br>
+                    16GB or 32GB LPDDR4x RAM<br><br>	
+                    512GB PCIe or 1TB PCIe SSD<br><br>
+                    Black, Mercury white<br><br>
+                    <div class="buyitem">From Ksh170,000 or<br><br>Ksh14,167 per month<a href="{{ url_for('blade15') }}"><br><br>Buy ></a></div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

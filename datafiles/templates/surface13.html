@@ -1,0 +1,104 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>13.5 inch surface laptop</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+
+<h2><br>Configure your 13.5" Surface laptop<br><br></h2>
+<div class = "configandcheckout">
+    <div class="configs">
+        <form method="POST" class="configcolor">
+            <h2>Pick your desired processor:</h2><br>
+            <input type="radio" id="configbuttons" name="13.5inchprocessor" value="Intel Core i5-1135G7(4cores)">
+            <label for="Intel Core i5-1135G7(4cores)">Quad Core 11th Gen Intel® Core™ i5-1135G7 (Iris® Xe  Graphics)</label><br><br>
+            <input type="radio" id="configbuttons" name="13.5inchprocessor" value="Intel Core i7-1185G7(4cores)">
+            <label for="Intel Core i7-1185G7(4cores)">Quad Core 11th Intel® Core™ i7-1185G7 (Iris® Xe  Graphics)</label><br><br>
+            <input type="radio" id="configbuttons" name="13.5inchprocessor" value="AMD Ryzen 5 4680U(4cores)">
+            <label for="AMD Ryzen 5 4680U(4cores)">AMD Ryzen™ 5 4680U (Radeon™ Graphics)</label><br><br>
+            <br>
+            <br>
+            <h2>Choose your RAM:</h2><br>
+            <input type="radio" id="configbuttons" name="13.5inchram" value="16gb">
+            <label for="16gb">16GB<br><br></label>
+            <input type="radio" id="configbuttons" name="13.5inchram" value="32gb">
+            <label for="32gb">32GB</label><br><br>
+            <h2>Choose your storage:</h2><br>
+            <input type="radio" id="configbuttons" name="13.5inchstorage" value="512gb">
+            <label for="512gb">512GB<br><br></label>
+            <input type="radio" id="configbuttons" name="13.5inchstorage" value="1Tb">
+            <label for="1Tb">1TB</label><br><br>
+            <input type="radio" id="configbuttons" name="13.5inchstorage" value="2Tb">
+            <label for="2Tb">2TB</label><br><br>
+            <h2>Pick a color:</h2><br>
+            <input type="radio" id="configbuttons" name="13.5inchcolor" value="ice blue">
+            <label for="ice blue">Ice Blue</label><br><br>
+            <input type="radio" id="configbuttons" name="13.5inchcolor" value="sandstone">
+            <label for="sandstone">Sandstone</label><br><br>
+            <input type="radio" id="configbuttons" name="13.5inchcolor" value="platinum">
+            <label for="platinum">Platinum</label><br><br>
+            <input type="radio" id="configbuttons" name="13.5inchcolor" value="matte black">
+            <label for="matte black">Matte black</label><br>
+            <div class="submitencompass">
+                <div class="submitbutton"><br><br>
+                    <input type="submit"></input>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<br>
+<div class="row1" style="justify-content: center;margin-left: -70px;">
+    <br>
+    <div class="item1">
+        <img src="static/images/{{ 'sandstonesurface.jpg'}}" style="margin-top: -10px;margin-left: 50px;" height="234.2659px" width="363.966px">
+        <div class="row1description">
+            <br>
+            Sandstone<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="item1">
+        <img src="static/images/{{ 'iceblue.jpg'}}" style="margin-top: -10px;margin-left: 50px;" height="234.2659px" width="363.966px">
+        <div class="row1description">
+            <br>
+            Ice blue<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
+<div class="row1" style="justify-content: center;margin-left: -70px;">
+    <br>
+    <div class="item1" >
+        <img src="static/images/{{ 'matteblacksurface.webp'}}" style="margin-top: -10px;margin-left: 50px;" height="234.2659px" width="363.966px">
+        <div class="row1description">
+            <br>
+            Matte black<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="item1">
+        <img src="static/images/{{ 'platinumsurface.jpg'}}" style="margin-top: -10px;margin-left: 50px;" height="234.2659px" width="363.966px">
+        <div class="row1description">
+            <br>
+            Platinum<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

@@ -1,0 +1,93 @@
+{%extends 'base.html'%}
+
+{% block head %}
+<title>Audio</title>
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="shop">Top picks<br><br></div>
+    <div class="phonepicks" style="margin-left: 20px;">
+        <div class="row1" >
+            <br>
+            <div class="item1">
+                <a href="{{ url_for('buypixelbuds') }}"><img src="static/images/{{ 'pixelbuds2.png'}}" height="275.697px" width="206.1997px"></a>
+                <div class="row1description">
+                    <br>
+                    
+                    Google Pixel Buds
+                    <div class="buyitem"><br>Ksh20,000 or<br><br>Ksh1,667 per month<br><br><a href="{{ url_for('buypixelbuds') }}">Buy ></a></div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="item1">
+                <a href="{{ url_for('buyairpods') }}"><img src="static/images/{{ 'airpods.jpeg'}}" height="275.697px" width="206.1997px"></a>
+                <div class="row1description">
+                    <br>
+                    Apple AirPods
+                    <div class="buyitem"><br>Ksh15,000 or<br><br>Ksh1,250 per month<br><br><a href="{{ url_for('buyairpods') }}">Buy ></a></div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="item1">
+                <a href="{{ url_for('airpodspro') }}"><img src="static/images/{{ 'aipodspro.jpeg'}}" height="275.697px" width="206.1997px"></a>
+                <div class="row1description">
+                    <br>
+                    Apple AirPods Pro
+                    <div class="buyitem"><br>Ksh30,000 or<br><br>Ksh2,500 per month<br><br><a href="{{ url_for('airpodspro') }}">Buy ></a></div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="item1">
+                <a href="{{ url_for('budslive') }}"><img src="static/images/{{ 'budslivewhite.webp'}}" height="275.697px" width="206.1997px"></a>
+                <div class="row1description">
+                    <br>
+                    Samsung Galaxy Buds Live
+                    <div class="buyitem"><br>Ksh17,000 or<br><br>Ksh1,417 per month<br><br><a href="{{ url_for('budslive') }}">Buy ></a></div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shop"><br>Shop By Brand<br><br></div>
+    <div class="phonepicks">
+        <div class="row1" style="justify-content: center;margin-right: 140px;">
+            <br>
+            <div class="item1">
+                <a href="{{ url_for('airpods') }}"><img src="static/images/{{ 'applelogo.png'}}" width="201.3px" width="31.8px" class="apple"></a>
+            </div>
+            <div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+            <div class="item1">
+                <a href="{{ url_for('pixelbuds') }}"><img src="static/images/{{ 'googlelogo.png'}}" width="201.3px" width="31.8px" class="google"></a>
+            </div>
+            <div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+            <div class="item1">
+                <a href="{{ url_for('galaxybuds') }}"><img src="static/images/{{ 'samsung.png'}}" width="201.3px" width="31.8px" class="razer"></a>
+            </div>
+            <div class="item1">
+                <a href="{{ url_for('beats') }}"><img src="static/images/{{ 'beatslogo.png'}}" width="201.3px" width="31.8px" class="beats"></a>
+            </div>
+        </div>
+    </div>
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

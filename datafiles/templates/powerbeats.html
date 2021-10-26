@@ -1,0 +1,68 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>Powerbeats</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+
+<h2><br>Configure your Powerbeats Pro<br><br></h2>
+<div class = "configandcheckout">
+    <div class="configs">
+        <form method="POST" class="configcolor">
+            <h2>Pick a color:</h2><br>
+            <input type="radio" id="configbuttons" name="powerbeatscolor" value="ivory">
+            <label for="ivory">Ivory</label><br><br>
+            <input type="radio" id="configbuttons" name="powerbeatscolor" value="red">
+            <label for="red">Red</label><br><br>
+            <input type="radio" id="configbuttons" name="powerbeatscolor" value="black">
+            <label for="black">Black</label><br><br>
+                <div class="submitbutton"><br><br>
+                    <input type="submit"></input>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<br>
+<div class="row1">
+    <br>
+    <div class="item1">
+        <img src="static/images/{{ 'powerbeatsblack.jpeg'}}"  width="306.1997px" height="auto"style="margin-top: 35px;">
+        <div class="row1description">
+            <br>
+            Black<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="item1">
+        <img src="static/images/{{ 'powerbeatsred.jpeg'}}"  width="306.1997px" height="auto" style="margin-top: 35px;">
+        <div class="row1description">
+            <br>
+            Red<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="item1">
+        <img src="static/images/{{ 'powerbeatsivory.jpeg'}}"  width="306.1997px" height="auto" style="margin-top: 35px;margin-left: 50px;">
+        <div class="row1description" style="margin-left: 40px;">
+            <br>
+            Ivory<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

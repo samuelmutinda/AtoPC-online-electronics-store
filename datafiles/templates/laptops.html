@@ -1,0 +1,117 @@
+{%extends 'base.html'%}
+
+{% block head %}
+<title>laptops</title>
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="shop">Top picks<br><br></div>
+    <div class="phonepicks">
+        <div class="row1">
+            <br>
+            <div class="item1">
+                <a href="{{ url_for('bladestealth') }}"><img src="static/images/{{ 'razerstealth.jpg'}}" height="186.33.5px" width="321.333px">&nbsp; &nbsp; &nbsp;</a>
+                <div class="row1description">
+                    <br>
+                    R Λ Z Ξ R blade stealth 13<br><br>
+                    13.3" 60Hz 4K Touch, 13.3" 120Hz Full HD or<br><br>13.3" 60Hz OLED Full HD Touch<br><br>
+                    11th Gen Intel® Core™ i7-1165G7 Quad-Core<br><br>
+                    NVIDIA® GeForce GTX 1650 Ti Max-Q)<br><br>
+                    16GB/32GB dual-channel LPDDR4x RAM<br><br>	
+                    512GB/1TB/2TB SSD<br><br>
+                    Black, Mercury white<br><br>
+                    <div class="buyitem">From Ksh180,000 or<br><br>Ksh15,000 per month<a href="{{ url_for('bladestealth') }}"><br><br>Buy ></a></div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="item1">
+                <a href="{{ url_for('surface13page') }}"><img src="static/images/{{ 'surface.jpg'}}" height="186.33.5px" width="301.333px"></a>
+                <div class="row1description">
+                    <br>
+                    <br>
+                    Microsoft surface laptop 4 (13.5")<br><br>
+                    13.5” PixelSense™ Display<br><br>
+                    11th Gen Intel® Core™ i7 or AMD Ryzen™ 5<br><br>
+                    Iris® Xe Graphics or Radeon™ Graphics<br><br>
+                    16GB or 32GB LPDDR4x RAM<br><br>	
+                    512GB, 1TB, or 2TB SSD<br><br>
+                    Ice Blue, Sandstone, Platinum, Matte Black<br><br>
+                    <div class="buyitem">From Ksh100,000 or<br><br>Ksh8,334 per month<a href="{{ url_for('surface13page') }}"><br><br>Buy ></a></div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="item1">
+                <a href="{{ url_for('macbookpro13') }}"><img src="static/images/{{ 'macbookpro.png'}}" height="176.33.5px" width="301.333px"></a>
+                <div class="row1description">
+                    <br>
+                    MacBook Pro 13<br><br>
+                    13" Liquid Retina Display<br><br>
+                    Apple M1(8 core cpu, 8 core graphics)<br><br>
+                    8GB/16GB Unified Memory<br><br>
+                    128GB/256GB/1TB/2TB SSD<br><br>
+                    Magic keyboard with touchbar<br><br>
+                    Space gray, Silver<br><br>
+                    <div class="buyitem">From Ksh130,000 or<br><br>Ksh9,167 per month<a href="{{ url_for('macbookpro13') }}"><br><br>Buy ></a></div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="item1">
+                <a href="{{ url_for('macbookairpage') }}"><img src="static/images/{{ 'macbookair.jpg'}}" height="186.33.5px" width="301.333px"></a>
+                <div class="row1description">
+                    <br>
+                    MacBook Air<br><br>
+                    13" Liquid Retina Display<br><br>
+                    Apple M1(8 core cpu, 7/8 core graphics)<br><br>
+                    8GB/16GB Unified Memory<br><br>
+                    128GB/256GB/1TB/2TB SSD<br><br>
+                    Magic keyboard without touchbar<br><br>
+                    Space gray, Silver, Gold<br><br>
+                    <div class="buyitem">From Ksh100,000 or<br><br>Ksh8,334 per month<a href="{{ url_for('macbookairpage') }}"><br><br>Buy ></a></div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shop"><br>Select Brand<br><br></div>
+    <div class="phonepicks">
+        <div class="row1" style="justify-content: center;">
+            <br>
+            <div class="item1">
+                <a href="{{ url_for('macbookpage') }}"><img src="static/images/{{ 'applelogo.png'}}" width="201.3px" width="31.8px" class="apple"></a>
+            </div>
+            <div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+            <div class="item1">
+                <a href="{{ url_for('surfacepage') }}"><img src="static/images/{{ 'microsoft.png'}}" width="201.3px" width="31.8px" class="microsoft"></a>
+            </div>
+            <div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+            <div class="item1">
+                <a href="{{ url_for('razerpage') }}"><img src="static/images/{{ 'Razer.png'}}" width="201.3px" width="31.8px" class="razer"></a>
+            </div>
+            <!-- <div class="item1">
+                <a href="#"><img src="static/images/{{ 'onepluslogo.png'}}" width="201.3px" width="31.8px" class="oneplus"></a>
+            </div> -->
+        </div>
+    </div>
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

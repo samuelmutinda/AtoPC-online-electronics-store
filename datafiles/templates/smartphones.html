@@ -1,0 +1,88 @@
+{%extends 'base.html'%}
+
+{% block head %}
+<title>smartphones</title>
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}  
+<body>
+    <div class="shop">Top picks<br><br></div>
+    <div class="phonepicks">
+        <div class="row1">
+            <br>
+            <div class="item1">
+                <a href="{{ url_for('pixel5page') }}"><img src="static/images/{{ 'pixelback.png'}}" width="163.5px" width="130.5px"></a>
+                <div class="row1description">
+                    <br>
+                    Google pixel 5<br><br>
+                    <div class="buyitem">From Ksh70,000 or<br><br>Ksh5,834 per month<br><br><a href="{{ url_for('pixel5page') }}">Buy ></a></div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="item1">
+                <a href="{{ url_for('iphone11page') }}"><img src="static/images/{{ 'iphone11.png'}}" width="243.5px" width="180.5px"></a>
+                <div class="row1description">
+                    <br>
+                    iPhone 11<br><br>
+                    <div class="buyitem">From Ksh60,000 or<br><br>Ksh5,000 per month&nbsp;<a href="{{ url_for('iphone11page') }}"><br><br>Buy ></a></div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="item1">
+                <a href="{{ url_for('s21page') }}"><img src="static/images/{{ 's21phantomviolet.jpg'}}" width="153.5px" width="200.5px"></a>
+                <div class="row1description">
+                    <br>
+                    Samsung galaxy S21 plus<br><br>
+                    <div class="buyitem">From Ksh100,000 or<br><br>Ksh8,334 per month&nbsp;<a href="{{ url_for('s21page') }}"><br><br>Buy ></a></div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="item1">
+                <a href="{{ url_for('note20ultrapage') }}"><img src="static/images/{{ 'note20.jpeg'}}" width="213.5px" width="180.5px"></a>
+                <div class="row1description">
+                    <br>
+                    Samsung galaxy note 20 ultra<br><br>
+                    <div class="buyitem">From Ksh130,000 or<br><br>Ksh10,834 per month&nbsp;<a href="{{ url_for('note20ultrapage') }}"><br><br>Buy ></a></div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shop"><br>Select Brand<br><br></div>
+    <div class="phonepicks">
+        <div class="row1" style="justify-content: center;">
+            <br>
+            <div class="item1">
+                <a href="{{ url_for('iphonespage') }}"><img src="static/images/{{ 'applelogo.png'}}" width="201.3px" width="31.8px" class="apple"></a>
+            </div>
+            <div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+            <div class="item1">
+                <a href="{{ url_for('pixelpage') }}"><img src="static/images/{{ 'googlelogo.png'}}" width="201.3px" width="31.8px" class="google"></a>
+            </div>
+            <div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+            <div class="item1">
+                <a href="{{ url_for('samsungpage') }}"><img src="static/images/{{ 'samsung.png'}}" width="201.3px" width="31.8px" class="razer"></a>
+            </div>
+        </div>
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

@@ -1,0 +1,91 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>base s21</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+
+<h2><br>Configure your S21<br><br></h2>
+<div class = "configandcheckout">
+    <div class="configs">
+        <form method="POST" class="configcolor">
+            <h2>Pick a color:</h2><br>
+            <input type="radio" id="configbuttons" name="s21color" value="phantom violet">
+            <label for="phantom violet">Phantom violet</label><br><br>
+            <input type="radio" id="configbuttons" name="s21color" value="phantom silver">
+            <label for="phantom silver">Phantom silver</label><br><br>
+            <input type="radio" id="configbuttons" name="s21color" value="phantom pink">
+            <label for="phantom pink">Phantom pink</label><br><br>
+            <input type="radio" id="configbuttons" name="s21color" value="phantom gray">
+            <label for="phantom gray">Phantom gray</label><br><br>
+            <br>
+            <br>
+            <h2>Choose your storage:</h2><br>
+            <input type="radio" id="configbuttons" name="s21storage" value="128gb">
+            <label for="128gb">128GB</label><br><br>
+            <input type="radio" id="configbuttons" name="s21storage" value="256gb">
+            <label for="256gb">256GB</label><br><br>
+            <input type="radio" id="configbuttons" name="s21storage" value="512gb">
+            <label for="512gb">512GB<br><br></label>
+            <div class="submitencompass">
+                <div class="submitbutton"><br><br>
+                    <input type="submit"></input>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<br>
+<div class="row1s21">
+    <br>
+    <div class="item1">
+        <img src="static/images/{{ 's21gray.png'}}" style="margin-left: 120px;" width="393.5px" height="490.5px">
+        <div class="row1description">
+            <br>
+            Phantom gray<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="item1">
+        <img src="static/images/{{ 's21pink.png'}}" width="393.5px" height="490.5px">
+        <div class="row1description">
+            <br>
+            Phantom pink<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
+<div class="row212pro">
+    <div class="item1">
+        <img src="static/images/{{ 'phantomwhite.png'}}" class="image2" width="393.5px" height="490.5px">
+        <div class="row1description">
+            <br>
+            Phantom silver<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="item1">
+        <img src="static/images/{{ 'phantomviolet.jpg'}}" width="393.5px" height="490.5px">
+        <div class="row1description">
+            <br>
+            Phantom violet<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

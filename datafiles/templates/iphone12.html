@@ -1,0 +1,85 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>iPhone 12</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<h2><br>Pick a model<br><br></h2>
+<div class="row1">
+    <br>
+    <div class="item1">
+        <br><br><br><br>
+        <a href="{{ url_for('iphone12minipage') }}"><img src="static/images/{{ 'iphone12black.png'}}" width="203.5px" width="180.5px" ></a>
+        <div class="row1description">
+            <br>
+            iPhone 12 mini<br><br>
+            5.4" Super retina XDR Display<br><br>
+            A14 Bionic chip<br><br>
+            2227mAh Battery<br><br>
+            5G capable<br><br>
+            Black, White, Red, Green, Blue, Purple<br><br>
+            <div class="buyitem">From Ksh70,000 or<br><br>Ksh5,834 per month &nbsp;<a href="{{ url_for('iphone12minipage') }}"><br><br>Buy ></a></div>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="item1">
+        <br><br>
+        <a href="{{ url_for('baseiphone12page') }}"><img src="static/images/{{ 'iphone12black.png'}}" width="223.5px" width="180.5px"></a>
+        <div class="row1description">
+            <br>
+            iPhone 12<br><br>
+            6.1" Super retina XDR Display<br><br>
+            A14 Bionic chip<br><br>
+            2815mAh Battery<br><br>
+            5G capable<br><br>
+            Black, White, Red, Green, Blue, Purple<br><br>
+            <div class="buyitem">From Ksh75,000 or<br><br>Ksh6,250 per month &nbsp;<a href="{{ url_for('baseiphone12page') }}"><br><br>Buy ></a></div>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="item1">
+        <br><br>
+        <a href="{{ url_for('iphone12propage') }}"><img src="static/images/{{ 'iphone12progold.png'}}" width="223.5px" width="180.5px"></a>
+        <div class="row1description">
+            <br>
+            iPhone 12 Pro<br><br>
+            6.1" Super retina XDR Display<br><br>
+            A14 Bionic chip<br><br>
+            2815mAh Battery<br><br>
+            5G capable<br><br>
+            Silver, Graphite, Gold, Pacific Blue<br><br>
+            <div class="buyitem">From Ksh100,000 or<br><br>Ksh8,334 per month &nbsp;<a href="{{ url_for('iphone12propage') }}"><br><br>Buy ></a></div>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="item1">
+        <a href="{{ url_for('iphone12promaxpage') }}"><img src="static/images/{{ 'iphone12progold.png'}}" width="243.5px" width="180.5px"></a>
+        <div class="row1description">
+            <br>
+            iPhone 12 pro max<br><br>
+            6.7" Super retina XDR Display<br><br>
+            A14 Bionic chip<br><br>
+            3687mAh Battery<br><br>
+            5G capable<br><br>
+            Silver, Graphite, Gold, Pacific Blue<br><br>
+            <div class="buyitem">From Ksh130,000 or<br><br>Ksh10,834 per month &nbsp;<a href="{{ url_for('iphone12promaxpage') }}"><br><br>Buy ></a></div>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

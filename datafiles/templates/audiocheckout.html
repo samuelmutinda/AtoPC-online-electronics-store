@@ -1,0 +1,61 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>Checkout</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+    <h2 class="checkout">Checkout:</h2><br>
+    <div class="itemdetails">
+        {{ audio.audioname }}<br>
+        {{ audio.audiocolor }}<br>
+        ksh {{ audio.cash_price|round }} cash or<br>
+        ksh {{ audio.contract_price|round }} per month for 12 months<br>
+    </div><br><br>
+    <section>
+        <div class="contentbox" id="buyform">
+            <div class="formbox">
+                <h2>Purchase</h2>
+                <form method="POST">
+                    {{ form.hidden_tag() }}
+                    <div class="inputbox">
+                        <span>Username</span>
+                        {{ form.username(class="form-control") }}
+                    </div>
+                    <div class="inputbox">
+                        <span>Password</span>
+                        {{ form.password(class="form-control") }}
+                    </div>
+                    <div class="inputbox">
+                        <span>Credit card no</span>
+                        {{ form.creditcard(class="form-control") }}
+                    </div>
+                    <div class="deliverycompany">
+                        <span>Select your preferred delivery method</span><br><br>
+                        {{ form.deliverycompany(class="form-control") }}
+                        <br>
+                    </div>
+                    <div class="deliverycompany">
+                        <span>Select your preferred payment method</span><br><br>
+                        {{ form.paymentmethod(class="form-control") }}
+                        <br>
+                    </div>
+                    <div class="inputbox">{{ form.submit(class="btn btn-lg btn-block btn-primary") }}</div>
+                    <div class="inputbox">
+                        <p>Don't have an account? <a href="{{ url_for('signuppage') }}">Register first</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

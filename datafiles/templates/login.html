@@ -1,0 +1,43 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>login</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<section>
+    <div class="contentbox">
+        <div class="formbox">
+            <h2>Login</h2>
+            <form method="POST">
+                {{ form.hidden_tag() }}
+                <div class="inputbox">
+                    <span>Username</span>
+                    {{ form.username(class="form-control") }}
+                </div>
+                <div class="inputbox">
+                    <span>Password</span>
+                    {{ form.password(class="form-control") }}
+                </div>
+                <div class="remember">
+                    <label><input type="checkbox" name=""> Remember me</label>
+                </div>
+                <div class="inputbox">{{ form.submit(class="btn btn-lg btn-block btn-primary") }}</div>
+                <div class="inputbox">
+                    <p>Don't have an account? <a href="{{ url_for('signuppage') }}">Register</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

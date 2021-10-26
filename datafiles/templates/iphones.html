@@ -1,0 +1,87 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>iphones</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<div class="pageheaders"><h1>Shop iPhone</h1><br></div>
+<div class="iphonepage1">
+    <div class="row1">
+        <br>
+        <div class="item1">
+            <a href="{{ url_for('iphone12page') }}"><img src="static/images/{{ 'iphone12blue.png'}}" width="243.5px" width="180.5px"></a>
+            <div class="row1description">
+                <br>
+                iPhone 12 series<br><br>
+                5.4", 6.1", 6.7" Super retina XDR displays<br><br>
+                A14 Bionic chip<br><br>
+                5G capable<br><br>
+                Dual and triple 12mp Cameras<br><br>
+                Amazing colors to choose<br><br>
+                <div class="buyitem">From Ksh70,000 or<br><br>Ksh5,834 per month<br><br><a href="{{ url_for('iphone12page') }}">Buy ></a></div>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="item1">
+            <a href="{{ url_for('iphone11page') }}"><img src="static/images/{{ 'iphone11.png'}}" width="243.5px" width="180.5px"></a>
+            <div class="row1description">
+                <br>
+                iPhone 11<br><br>
+                6.1-inch Liquid Retina HD<br><br>
+                A13 Bionic chip<br><br>
+                3110mAh Battery<br><br>
+                4G LTE<br><br>
+                Dual 12mp Cameras<br><br>
+                Black, Green, Yellow, Purple, Red, White<br><br>
+                <div class="buyitem">From Ksh60,000 or<br><br>Ksh5,000 per month&nbsp;<a href="{{ url_for('iphone11page') }}"><br><br>Buy ></a></div>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="item1">
+            <a href="{{ url_for('iphonexrpage') }}"><img src="static/images/{{ 'xrcoral.png'}}" width="220.5px" height="333.5px"></a>
+            <div class="row2description">
+                <br>
+                iPhone XR<br><br>
+                6.1-inch Liquid Retina HD<br><br>
+                A12 Bionic chip<br><br>
+                2942 mAh Battery<br><br>
+                4G LTE<br><br>
+                Single 12mp camera<br><br>
+                Red, Yellow, White, Coral, Black, Blue<br><br>
+                <div class="buyitem">From Ksh50,000 or<br><br>Ksh4,167 per month&nbsp;<a href="{{ url_for('iphonexrpage') }}"><br><br>Buy ></a></div>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="item1">
+            <a href="{{ url_for('iphonesepage') }}"><img src="static/images/{{ 'se2020.png'}}" width="273.5px" width="180.5px"></a>
+            <div class="row2description">
+                <br>
+                iPhone SE(2020)<br><br>
+                4.7-inch Retina IPS LCD<br><br>
+                A13 Bionic chip<br><br>
+                1821 mAh Battery<br><br>
+                4G LTE<br><br>
+                Single 12mp camera<br><br>
+                Black, White, Red<br><br>
+                <div class="buyitem">From Ksh40,000<br><br>or Ksh3,334 per month&nbsp;<a href="{{ url_for('iphonesepage') }}"><br><br>Buy ></a></div>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

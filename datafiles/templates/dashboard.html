@@ -1,0 +1,93 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>dashboard</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<h2 class="welcomedashboard">Welcome, &nbsp;{{ current_user.username }}</h2>
+<br>
+<table class="table table-sm" style="justify-content: center;">
+  <h3 style="text-align: center;">Orders:</h3>
+  <thead>
+    <tr class="spaceUnder"></tr>
+      <th scope="col">Tracking Number</th>
+      <th scope="col">Device name</th>
+      <th scope="col">Color</th>
+      <th scope="col">Screen size</th>
+      <th scope="col">Storage</th>
+      <th scope="col">Order date</th>
+      <th scope="col">Delivery date</th>
+    </tr>
+  </thead>
+  {% for i in range(ordernos| length) %}
+  <tbody>
+    <tr class="spaceUnder">
+      <td>{{  ordernos[i].trackingid }}</td>
+      <td>{{  devices[i].devicename }}</td>
+      <td>{{  devices[i].devicecolor }}</td>
+      <td>{{  devices[i].screensize }}</td>
+      <td>{{  devices[i].devicestorage }}</td>
+      <td>{{  items[i].order_date }}</td>
+      <td>{{  items[i].delivery_date }}</td>
+    </tr>
+  </tbody>
+  {% endfor %}
+</table>
+<br><br><br>
+<table class="table table-sm" style="justify-content: center;">
+  <h3 style="text-align: center;">Contracts:</h3>
+  <thead>
+    <tr class="spaceUnder"></tr>
+      <th scope="col">Contract id</th>
+      <th scope="col">Debit amount/month</th>
+      <th scope="col">Device Purchased</th>
+      <th scope="col">Starting date</th>
+      <th scope="col">Ending date</th>
+    </tr>
+  </thead>
+  {% for j in range(contracts| length) %}
+  <tbody>
+    <tr class="spaceUnder">
+      <td>{{  contracts[j].contractid }}</td>
+      <td>{{  contracts[j].contractamount }}</td>
+      <td>{{  contractdevices[j].devicename }}</td>
+      <td>{{  contracts[j].startingdate }}</td>
+      <td>{{  contracts[j].endingdate }}</td>
+    </tr>
+  </tbody>
+  {% endfor %}
+</table>
+<br><br><br>
+<table class="table table-sm" style="justify-content: center;">
+  <h3 style="text-align: center;">Instant payments:</h3>
+  <thead>
+    <tr class="spaceUnder"></tr>
+      <th scope="col">Transaction id</th>
+      <th scope="col">Transaction amount/month</th>
+      <th scope="col">Device Purchased</th>
+      <th scope="col">Payment date</th>
+    </tr>
+  </thead>
+  {% for k in range(transactions| length) %}
+  <tbody>
+    <tr class="spaceUnder">
+      <td>{{  transactions[k].transactionid }}</td>
+      <td>{{  transactions[k].transactionamount }}</td>
+      <td>{{  transactiondevices[k].devicename }}</td>
+      <td>{{  transactions[k].transactiondate }}</td>
+    </tr>
+  </tbody>
+  {% endfor %}
+</table>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

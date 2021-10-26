@@ -1,0 +1,84 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>samsung</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<div class="pageheaders"><h1>Shop Galaxy</h1><br><br></div>
+<div class="iphonepage1">
+    <div class="row1">
+        <br>
+        <div class="item1">
+            <a href="{{ url_for('note10pluspage') }}"><img src="static/images/{{ 'note10back.png'}}"  style="margin-left: 30px;" height="373.5px" width="180.5px"></a>
+            <div class="row2description">
+                <br>
+                Galaxy note 10+<br><br>
+                6.8" Super amoled display<br><br>         
+                Qualcomm Snapdragon 855<br><br>
+                4G LTE<br><br>
+                Quad 12mp Cameras<br><br>
+                Aura Glow, Aura White, Aura Black,<br><br>Aura blue<br><br>
+                <div class="buyitem">From Ksh80,000 or<br><br>Ksh6,667 per month&nbsp;<a href="{{ url_for('note10pluspage') }}"><br><br>Buy ></a></div>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="item1">
+            <a href="{{ url_for('s20ultrapage') }}"><img src="static/images/{{ 's20ultrawhite.jpeg'}}" height="373.5px" width="363.06px"></a>
+            <div class="row2description">
+                <br>
+                Galaxy S20 ultra<br><br>
+                6.8" Super amoled display<br><br>
+                Qualcomm Snapdragon 865 5G<br><br>
+                5G Capable<br><br>
+                Quad 108mp Cameras<br><br>
+                Cosmic gray, Cosmic white<br><br>
+                <div class="buyitem">From Ksh110,000 or<br><br>Ksh9,167 per month&nbsp;<a href="{{ url_for('s20ultrapage') }}"><br><br>Buy ></a></div>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="item1">
+            <a href="{{ url_for('s21page') }}"><img src="static/images/{{ 's21ultrablack.png'}}" style="margin-left: 30px;" height="373.5px" width="180.5px"></a>
+            <div class="row1description">
+                <br>
+                Galaxy S21, S21+ and S21 ultra<br><br>
+                6.2"/6.7"/6.8" Super amoled displays<br><br>         
+                Qualcomm Snapdragon 888 5G <br><br>
+                5G Capable<br><br>
+                Triple 64mp/108mp Cameras<br><br>
+                Phantom violet, Phantom pink,<br><br> Phantom white, Phantom gray<br><br>
+                <div class="buyitem">From Ksh80,000 or<br><br>Ksh6,667 per month &nbsp;<a href="{{ url_for('s21page') }}"><br><br>Buy ></a></div>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="item1">
+            <a href="{{ url_for('note20page') }}"><img src="static/images/{{ 'note20.jpeg'}}" width="243.5px" width="180.5px"></a>
+            <div class="row1description">
+                <br>
+                Galaxy note 20 and note 20 ultra<br><br>
+                6.7"/6.8" Super amoled displays<br><br>
+                Qualcomm Snapdragon 865 5G+<br><br>
+                5G capable<br><br>
+                Triple 64mp/quad 108mp Cameras<br><br>
+                Mystic Black, Mystic Bronze, Mystic White.<br><br>
+                <div class="buyitem">From Ksh100,000 or<br><br>Ksh8,334 per month &nbsp;<br><br><a href="{{ url_for('note20page') }}">Buy ></a></div>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

@@ -1,0 +1,56 @@
+{%extends 'base.html'%}
+
+{% block head %}
+<title>Microsoft surface</title>
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="shop">Shop Microsoft surface<br><br></div>
+    <div class="phonepicks">
+        <div class="row1" style="justify-content: center;">
+            <br>
+            <div class="item1">
+                <a href="{{ url_for('surface15page') }}"><img src="static/images/{{ 'platinumsurface.jpg'}}" style="margin-top: -10px;margin-left: 50px;" height="234.2659px" width="363.966px"></a>
+                <div class="row1description" style="margin-left: 50px;">
+                    <br>
+                    Microsoft surface laptop 4 (15")<br><br>
+                    15” PixelSense™ Display<br><br>
+                    11th Gen Intel® Core™ i7 or AMD Ryzen™ 7<br><br>
+                    Iris® Xe Graphics or Radeon™ Graphics<br><br>
+                    8GB, 16GB or 32GB LPDDR4x RAM<br><br>	
+                    256GB, 512GB, or 1TB SSD<br><br>
+                    Platinum, Matte Black<br><br>
+                    <div class="buyitem">From Ksh140,000 or<br><br>Ksh11,667 per month<a href="{{ url_for('surface15page') }}"><br><br>Buy ></a></div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="item1">
+                <a href="{{ url_for('surface13page') }}"><img src="static/images/{{ 'platinumsurface.jpg'}}" style="margin-top: 20px;margin-right: 50px;" height="200.5685px" width="326.333px"></a>
+                <div class="row1description" style="margin-right: 50px;">
+                    <br>
+                    Microsoft surface laptop 4 (13.5")<br><br>
+                    13.5” PixelSense™ Display<br><br>
+                    11th Gen Intel® Core™ i7 or AMD Ryzen™ 5<br><br>
+                    Iris® Xe Graphics or Radeon™ Graphics<br><br>
+                    8GB, 16GB or 32GB LPDDR4x RAM<br><br>	
+                    256GB, 512GB, or 1TB SSD<br><br>
+                    Ice Blue, Sandstone, Platinum, Matte Black<br><br>
+                    <div class="buyitem">From Ksh120,000 or<br><br>Ksh10,000 per month<a href="{{ url_for('surface13page') }}"><br><br>Buy ></a></div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

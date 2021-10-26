@@ -1,0 +1,116 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>iPhone 12 mini</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+
+<h2><br>Configure your iphone 12 mini<br><br></h2>
+<div class = "configandcheckout">
+    <div class="configs">
+        <form method="POST" class="configcolor">
+            <h2>Pick a color:</h2><br>
+            <input type="radio" id="configbuttons" name="12phonecolor" value="red">
+            <label for="red">(PRODUCT)RED</label><br><br>
+            <input type="radio" id="configbuttons" name="12phonecolor" value="white">
+            <label for="white">White</label><br><br>
+            <input type="radio" id="configbuttons" name="12phonecolor" value="black">
+            <label for="black">Black</label><br><br>
+            <input type="radio" id="configbuttons" name="12phonecolor" value="blue">
+            <label for="blue">Blue</label><br><br>
+            <input type="radio" id="configbuttons" name="12phonecolor" value="green">
+            <label for="green">Green</label><br><br>
+            <input type="radio" id="configbuttons" name="12phonecolor" value="purple">
+            <label for="purple">Purple</label>
+            <br>
+            <br>
+            <h2>Choose your storage:</h2><br>
+            <input type="radio" id="configbuttons" name="12phonestorage" value="64gb">
+            <label for="64gb">64GB</label><br><br>
+            <input type="radio" id="configbuttons" name="12phonestorage" value="128gb">
+            <label for="128gb">128GB</label><br><br>
+            <input type="radio" id="configbuttons" name="12phonestorage" value="256gb">
+            <label for="256gb">256GB</label><br><br>
+            <input type="radio" id="configbuttons" name="12phonestorage" value="512gb">
+            <label for="512gb">512GB<br><br></label>
+            <div class="submitencompass">
+                <div class="submitbutton"><br><br>
+                    <input type="submit"></input>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<br>
+<div class="row1">
+    <br>
+    <div class="item1">
+        <a href="#"><img src="static/images/{{ 'iphone12black.png'}}" width="243.5px" width="180.5px" ></a>
+        <div class="row1description">
+            <br>
+            Black<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="item1">
+        <a href="#"><img src="static/images/{{ 'iphone12white.png'}}" width="243.5px" width="180.5px"></a>
+        <div class="row1description">
+            <br>
+            White<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="item1">
+        <a href="#"><img src="static/images/{{ 'iphone12red.png'}}" width="243.5px" width="180.5px"></a>
+        <div class="row1description">
+            <br>
+            (PRODUCT)RED<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
+<div class="row2">
+    <br>
+    <div class="item1">
+        <a href="#"><img src="static/images/{{ 'iphone12purple.png'}}" width="243.5px" width="180.5px" ></a>
+        <div class="row1description">
+            <br>
+            Purple<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="item1">
+        <a href="#"><img src="static/images/{{ 'iphone12green.png'}}" width="243.5px" width="180.5px"></a>
+        <div class="row1description">
+            <br>
+            Green<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="item1">
+        <a href="#"><img src="static/images/{{ 'iphone12blue.png'}}" width="243.5px" width="180.5px"></a>
+        <div class="row1description">
+            <br>
+            Blue<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

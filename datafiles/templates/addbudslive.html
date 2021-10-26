@@ -1,0 +1,46 @@
+{%extends 'adminbase.html'%}
+
+{% block head %}
+
+<title>Restock Galaxy buds live</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<h2><br>Configure the Galaxy Buds live:<br><br></h2>
+<section>
+    <div class="contentbox" id="buyform">
+        <div class="formbox">
+            <form method="POST" class="configcolor">
+                {{ form.hidden_tag() }}
+                    <div class="x">
+                        <span>Select the color</span><br><br>
+                        {{ form.color(class="form-control") }}
+                    </div><br>
+                    <div class="inputbox">
+                        <span>Enter the cash price</span>
+                        {{ form.cashprice(class="form-control") }}
+                    </div><br>
+                    <div class="inputbox">
+                        <span>Enter the contract price</span>
+                        {{ form.contractprice(class="form-control") }}
+                    </div><br>
+                    <div class="inputbox">
+                        <span>Enter the number of units</span>
+                        {{ form.units(class="form-control") }}
+                    </div>
+                    <div class="inputbox">{{ form.submit(class="btn btn-lg btn-block btn-primary") }}</div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

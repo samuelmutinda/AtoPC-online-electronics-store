@@ -1,0 +1,70 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>Blade stealth</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+
+<h2><br>Configure your Blade stealth<br><br></h2>
+<div class = "configandcheckout">
+    <div class="configs">
+        <form method="POST" class="configcolor">
+            <h2>Choose your RAM:</h2><br>
+            <input type="radio" id="configbuttons" name="bladeram" value="16gb">
+            <label for="16gb">16GB<br><br></label>
+            <input type="radio" id="configbuttons" name="bladeram" value="32gb">
+            <label for="32gb">32GB</label><br><br>
+            <h2>Choose your storage:</h2><br>
+            <input type="radio" id="configbuttons" name="bladestorage" value="512gb">
+            <label for="512gb">512GB<br><br></label>
+            <input type="radio" id="configbuttons" name="bladestorage" value="1Tb">
+            <label for="1Tb">1TB</label><br><br>
+            <input type="radio" id="configbuttons" name="bladestorage" value="2Tb">
+            <label for="2Tb">2TB</label><br><br>
+            <h2>Pick a color:</h2><br>
+            <input type="radio" id="configbuttons" name="bladecolor" value="mercury white">
+            <label for="mercury white">Mercury white</label><br><br>
+            <input type="radio" id="configbuttons" name="bladecolor" value="stealth black">
+            <label for="stealth black">Stealth black</label><br><br>
+            <div class="submitencompass">
+                <div class="submitbutton"><br><br>
+                    <input type="submit"></input>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<br>
+<div class="row1" style="justify-content: center;">
+    <br>
+    <div class="item1" style="margin-left: 100px;">
+        <img src="static/images/{{ 'blade13black.png'}}" style="margin-top: 40px;margin-left: 50px;" height="230.2659px" width="370.966px">
+        <div class="row1description">
+            <br>
+            Stealth black<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="item1">
+        <img src="static/images/{{ 'razerstealth.jpg'}}" style="margin-top: 40px;margin-left: 50px;" height="230.2659px" width="370.966px">
+        <div class="row1description">
+            <br>
+            Mercury white<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

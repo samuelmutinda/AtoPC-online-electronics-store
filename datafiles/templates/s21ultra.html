@@ -1,0 +1,67 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>S21 ultra</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+
+<h2><br>Configure your S21 ultra<br><br></h2>
+<div class = "configandcheckout">
+    <div class="configs">
+        <form method="POST" class="configcolor">
+            <h2>Pick a color:</h2><br>
+            <input type="radio" id="configbuttons" name="s21ultracolor" value="phantom silver">
+            <label for="phantom silver">Phantom silver</label><br><br>
+            <input type="radio" id="configbuttons" name="s21ultracolor" value="phantom black">
+            <label for="phantom black">Phantom black</label><br><br>
+            <br>
+            <br>
+            <h2>Choose your storage:</h2><br>
+            <input type="radio" id="configbuttons" name="s21ultrastorage" value="128gb">
+            <label for="128gb">128GB</label><br><br>
+            <input type="radio" id="configbuttons" name="s21ultrastorage" value="256gb">
+            <label for="256gb">256GB</label><br><br>
+            <input type="radio" id="configbuttons" name="s21ultrastorage" value="512gb">
+            <label for="512gb">512GB<br><br></label>
+            <div class="submitencompass">
+                <div class="submitbutton"><br><br>
+                    <input type="submit"></input>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<br>
+<div class="rows21ultra" style="margin-left: 250px;">
+    <br>
+    <div class="item1">
+        <a href="#"><img src="static/images/{{ 'ultraphantomwhite.png'}}" width="393.5px" height="490.5px"><</a>
+        <div class="row1description">
+            <br>
+            Phantom silver<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="item1">
+        <a href="#"><img src="static/images/{{ 'phantomblack.png'}}" width="393.5px" height="490.5px"></a>
+        <div class="row1description">
+            <br>
+            Phantom Black<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

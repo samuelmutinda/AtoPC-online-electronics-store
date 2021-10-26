@@ -1,0 +1,116 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>iPhone Xr</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+
+<h2><br>Configure your iPhone Xr<br><br></h2>
+<div class = "configandcheckout">
+    <div class="configs">
+        <form method="POST" class="configcolor">
+            <h2>Pick a color:</h2><br>
+            <input type="radio" id="configbuttons" name="xrcolor" value="red">
+            <label for="red">(PRODUCT)RED</label><br><br>
+            <input type="radio" id="configbuttons" name="xrcolor" value="white">
+            <label for="white">White</label><br><br>
+            <input type="radio" id="configbuttons" name="xrcolor" value="black">
+            <label for="black">Black</label><br><br>
+            <input type="radio" id="configbuttons" name="xrcolor" value="yellow">
+            <label for="yellow">Yellow</label><br><br>
+            <input type="radio" id="configbuttons" name="xrcolor" value="coral">
+            <label for="coral">Coral</label><br><br>
+            <input type="radio" id="configbuttons" name="xrcolor" value="blue">
+            <label for="blue">Blue</label>
+            <br>
+            <br>
+            <h2>Choose your storage:</h2><br>
+            <input type="radio" id="configbuttons" name="xrstorage" value="64gb">
+            <label for="64gb">64GB</label><br><br>
+            <input type="radio" id="configbuttons" name="xrstorage" value="128gb">
+            <label for="128gb">128GB</label><br><br>
+            <input type="radio" id="configbuttons" name="xrstorage" value="256gb">
+            <label for="256gb">256GB</label><br><br>
+            <input type="radio" id="configbuttons" name="xrstorage" value="512gb">
+            <label for="512gb">512GB<br><br></label>
+            <div class="submitencompass">
+                <div class="submitbutton"><br><br>
+                    <input type="submit"></input>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<br>
+<div class="row11" >
+    <br>
+    <div class="item1">
+        <img src="static/images/{{ 'xrblack.png'}}" width="243.5px" width="180.5px" >
+        <div class="row1description">
+            <br>
+            Black<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="item1">
+        <img src="static/images/{{ 'xrwhite.png'}}" width="243.5px" width="180.5px">
+        <div class="row1description">
+            <br>
+            White<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="item1">
+        <img src="static/images/{{ 'xrred.png'}}" width="243.5px" width="180.5px">
+        <div class="row1description">
+            <br>
+            (PRODUCT)RED<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
+<div class="row12">
+    <br>
+    <div class="item1">
+        <img src="static/images/{{ 'xrblue.png'}}" width="243.5px" width="180.5px" >
+        <div class="row1description">
+            <br>
+            Blue<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="item1">
+        <img src="static/images/{{ 'xrcoral.png'}}" width="243.5px" width="180.5px">
+        <div class="row1description">
+            <br>
+            Coral<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="item1">
+        <img src="static/images/{{ 'xryellow.png'}}" width="243.5px" width="180.5px">
+        <div class="row1description">
+            <br>
+            Yellow<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

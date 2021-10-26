@@ -1,0 +1,54 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>Beats</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<div class="pageheaders"><h1>Shop Beats by Dre</h1><br></div>
+<div class="page1">
+    <div class="row1" style="justify-content: center;margin-right: 150px;">
+        <br>
+        <div class="item1" style="margin-left: 50px;margin-top: 71px;">
+            <a href="{{ url_for('powerbeats') }}"><img src="static/images/{{ 'powerbeatsivory.jpeg'}}"  width="306.1997px" height="auto"></a>
+            <div class="row1description" style="margin-top: 50px;">
+                <br>
+                Powerbeats Pro<br><br>
+                Active Noise Cancellation<br><br>
+                Automatic switching<br><br>
+                Sweat and water resistant<br><br>
+                Up to 9 hours listening time<br><br>
+                Wireless Charging Case<br><br>
+                Siri integration<br><br>
+                <div class="buyitem"><a href="{{ url_for('powerbeats') }}">Ksh10,000 or<br><br>Ksh834 per month<br><br>Buy ></a></div>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="item1" style="margin-right: 100px;">
+            <a href="{{ url_for('beatssolopro') }}"><img src="static/images/{{ 'ivory.jpeg'}}" width="206.1997px" height="auto"></a>
+            <div class="row1description">
+                <br>
+                Beats solo pro<br><br>
+                Active noise cancellation<br><br>
+                On ear design<br><br>
+                Up to 22 hours listening time<br><br>
+                Siri integration<br><br>
+                <div class="buyitem"><a href="{{ url_for('beatssolopro') }}">Ksh30,000 or<br><br>Ksh2,500 per month<br><br>Buy ></a></div>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

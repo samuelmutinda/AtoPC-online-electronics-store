@@ -1,0 +1,44 @@
+{%extends 'base.html'%}
+
+{% block head %}
+<title>Samsung audio</title>
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="shop">Shop Galaxy Buds<br><br></div>
+    <div class="phonepicks">
+        <div class="row1">
+            <br>
+            <div class="item1">
+                <a href="{{ url_for('budslive') }}"><img src="static/images/{{ 'budslivewhite.webp'}}" width="206.1997px" height="auto"></a>
+                <div class="row1description">
+                    <br>
+                    Galaxy Buds Live<br><br>
+                    <div class="buyitem">Ksh30,000 or<br><br>Ksh2,500 per month<br><br><a href="{{ url_for('budslive') }}">Buy ></a></div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="item1" style="margin-left: 200px;">
+                <a href="{{ url_for('budsplus') }}"><img src="static/images/{{ 'buds+.png'}}" width="300px" height="auto" style="margin-top: 75px;"></a>
+                <div class="row1description">
+                    <br>
+                    Galaxy Buds+<br><br>
+                    <div class="buyitem">Ksh15,000 or<br><br>Ksh1,250 per month<br><br><a href="{{ url_for('budsplus') }}">Buy ></a></div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

@@ -1,0 +1,54 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>note20</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<div class="pageheaders"><h1>Shop Note 20</h1><br><br></div>
+<div class="iphonepage1">
+    <div class="row1">
+        <br>
+        <div class="item1">
+            <a href="{{ url_for('note20ultrapage') }}"><img src="static/images/{{ 'note20ultra.jpg'}}" height="443.5px" width="420.5px"></a>
+            <div class="row2description">
+                <br>
+                Galaxy note 20 ultra<br><br>
+                6.8" Super amoled display<br><br>
+                Qualcomm Snapdragon 865 5G+<br><br>
+                5G capable<br><br>
+                Quad 108mp Cameras<br><br>
+                Mystic Black, Mystic Bronze, Mystic White.<br><br>
+                <div class="buyitem">From Ksh100,000 or<br><br>Ksh8,334 per month<br><br><a href="{{ url_for('note20ultrapage') }}">Buy ></a></div>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="item1">
+            <a href="{{ url_for('basenote20page') }}"><img src="static/images/{{ 'note20front.png'}}" height="463.5px" width="720.5px"></a>
+            <div class="row2description">
+                <br>
+                Galaxy note 20<br><br>
+                6.7" Super amoled display<br><br>
+                Qualcomm Snapdragon 865 5G+<br><br>
+                5G capable<br><br>
+                Triple 64mp Cameras<br><br>
+                Mystic bronze, Mystic Gray, Mystic green<br><br>
+                <div class="buyitem">From Ksh130,000 or<br><br>Ksh10,834 per month<br><br><a href="{{ url_for('basenote20page') }}">Buy ></a></div>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

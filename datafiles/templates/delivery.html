@@ -1,0 +1,55 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>Delivery information</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+    <section>
+        <div class="contentbox" id="buyform">
+            <div class="formbox">
+                {% if payment_method == 'Contract' %}
+                <div style="font-size: large;">
+                    You will be debited Ksh{{ phoneid.contract_price|round }} every month
+                    <br>Fill in the deilvery form to confirm this contract<br><br>
+                </div>
+                {% elif payment_method == 'Cash' %}
+                <div style="font-size: large;">
+                    Ksh{{ phoneid.cash_price|round }} will be debited from your account
+                    <br>Fill in the deilvery form to confirm this purchase
+                </div>
+                {% endif %}
+                <h2>Delivery information</h2>
+                <form method="POST">
+                    {{ form.hidden_tag() }}
+                    <div class="inputbox">
+                        <span>Postal address</span>
+                        {{ form.postaladdress(class="form-control") }}
+                    </div>
+                    <div class="inputbox">
+                        <span>Home/delivery address</span>
+                        {{ form.deliveryaddress(class="form-control") }}
+                    </div>
+                    <div class="inputbox">
+                        <span>County of residence</span>
+                        {{ form.county(class="form-control") }}
+                    </div>
+                    <div class="inputbox">{{ form.submit(class="btn btn-lg btn-block btn-primary") }}</div>
+                    <div class="inputbox">
+                        <p>Don't have an account? <a href="{{ url_for('signuppage') }}">Register first</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

@@ -1,0 +1,62 @@
+{%extends 'base.html'%}
+
+{% block head %}
+<title>Homepage</title>
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<p>
+    <div class="smartphones">
+        <div class="gs21">
+            <div class="gopro">The new galaxy S21 with 5G</div>
+            <div class="from999"><br>From Ksh80,000</div>
+            <div class="tradein"><br>Future proof yourself with the latest<br><br>5G smartphone from samsung</div>
+            <div class="buy"><br>&nbsp; <a href="{{ url_for('s21page') }}">Buy ></a></div>
+            <img id="otherimages" src="static/images/{{ 's21cropped.png'}}" alt="galaxys21" >
+        </div>
+        <br>
+        <div class="pixel5">
+            <div class="teampixel">The google pixel 5 with 5G </div>
+            <div class="join"><br>Join #TeamPixel with the ultimate google 5G smartphone</div>
+            <div class="pixelavailable"><br>Available from Ksh70,000</div>
+            <div class="buy"><br>&nbsp; <a href="{{ url_for('pixel5page') }}">Buy ></a> </div>
+            <img id="otherimages" src="static/images/{{ 'pixel5.png'}}" alt="pixel5">
+        </div>
+    </div>
+    <br>
+    <div class="laptops">
+        <div class="laptopstext">
+            <div class="macintro">The spanking new Macbooks with M1</div>
+            <div class="airprice"><br>M1 macbook air from Ksh100,000</div>
+            <div class="proprice">M1 macbook pro from Ksh130,000</div>
+            <div class="buy"><br>&nbsp; <a href="{{ url_for('macbookpro13') }}">Buy ></a></div>
+        </div>
+        <img id="otherimages" src="static/images/{{ 'M1macbook.jpg'}}" alt="macbook">
+    </div>
+    <br>
+    <div class="audio">
+        <div class="pixelbuds">
+            <div class="pixelbudsintro">The google pixel buds</div>
+            <div class="pixelbudsdescription"><br>Premium audio, unobtrusive design and comfort</div>
+            <div class="pixelbudsprice"><br>Available from Ksh20,000</div>
+            <div class="buy"><br>&nbsp; <a href="{{ url_for('pixelbuds') }}">Buy ></a></div>
+            <img id="otherimages" src="static/images/{{ 'pixelbuds.png'}}" alt="pixelbuds">
+        </div>
+        <div class="beats">
+            <div class="beatsintro">Beats solo pro</div>
+            <div class="beatsdescription"><br>Pro audio</div>
+            <div class="beatsprice"><br>Available from Ksh40,000</div>
+            <div class="buy"><br>&nbsp; <a href="{{ url_for('beatssolopro') }}">Buy ></a></div>
+            <img id="otherimages" src="static/images/{{ 'beats.png'}}" alt="beats">
+        </div>
+    </div>
+</p>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

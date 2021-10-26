@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../vscode c++"
+		},
+		{
+			"path": "../vscode python"
+		},
+		{
+			"path": "../web2"
+		},
+		{
+			"path": "../pagerank"
+		},
+		{
+			"path": "../Jambo"
+		}
+	],
+	"settings": {}
+}

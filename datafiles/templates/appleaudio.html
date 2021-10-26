@@ -1,0 +1,52 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>AirPods</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<div class="pageheaders"><h1>Shop AirPods</h1><br></div>
+<div class="page1">
+    <div class="row1" style="justify-content: center;margin-right: 150px;">
+        <br>
+        <div class="item1" style="margin-left: 50px;">
+            <a href="{{ url_for('airpodspro') }}"><img src="static/images/{{ 'aipodspro.jpeg'}}" height="275.697px" width="206.1997px"></a>
+            <div class="row1description">
+                <br>
+                AirPods Pro<br><br>
+                Active Noise Cancellation<br><br>
+                Automatic switching<br><br>
+                Sweat and water resistant<br><br>
+                Up to 4.5 hours listening time<br><br>
+                Wireless Charging Case<br><br>
+                <div class="buyitem"><a href="{{ url_for('airpodspro') }}">Ksh30,000 or<br><br>Ksh2,500 per month<br><br>Buy ></a></div>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="item1" style="margin-right: 100px;">
+            <a href="{{ url_for('buyairpods') }}"><img src="static/images/{{ 'airpods.jpeg'}}" height="275.697px" width="206.1997px"></a>
+            <div class="row1description">
+                <br>
+                AirPods<br><br>
+                Automatic switching<br><br>
+                Up to 5 hours listening time<br><br>
+                Wireless Charging Case<br><br>
+                <div class="buyitem"><a href="{{ url_for('buyairpods') }}">Ksh15,000 or<br><br>Ksh1,250 per month<br><br>Buy ></a></div>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

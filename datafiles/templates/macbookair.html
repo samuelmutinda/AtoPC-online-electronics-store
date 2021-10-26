@@ -1,0 +1,85 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>Macbook air</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+
+<h2><br>Configure your MacBook Air<br><br></h2>
+<div class = "configandcheckout">
+    <div class="configs">
+        <form method="POST" class="configcolor">
+            <h2>Choose your RAM:</h2><br>
+            <input type="radio" id="configbuttons" name="airram" value="8gb">
+            <label for="8gb">8GB<br><br></label>
+            <input type="radio" id="configbuttons" name="airram" value="16gb">
+            <label for="16gb">16GB<br><br></label>
+            <input type="radio" id="configbuttons" name="airram" value="32gb">
+            <label for="32gb">32GB</label><br><br>
+            <h2>Choose your storage:</h2><br>
+            <input type="radio" id="configbuttons" name="airstorage" value="256gb">
+            <label for="256gb">256GB</label><br><br>
+            <input type="radio" id="configbuttons" name="airstorage" value="512gb">
+            <label for="512gb">512GB<br><br></label>
+            <input type="radio" id="configbuttons" name="airstorage" value="1Tb">
+            <label for="1Tb">1TB</label><br><br>
+            <input type="radio" id="configbuttons" name="airstorage" value="2Tb">
+            <label for="2Tb">2TB</label><br><br>
+            <h2>Pick a color:</h2><br>
+            <input type="radio" id="configbuttons" name="aircolor" value="space gray">
+            <label for="space gray">Space gray</label><br><br>
+            <input type="radio" id="configbuttons" name="aircolor" value="gold">
+            <label for="gold">Gold</label><br><br>
+            <input type="radio" id="configbuttons" name="aircolor" value="silver">
+            <label for="silver">Silver</label><br><br>
+            <div class="submitencompass">
+                <div class="submitbutton"><br><br>
+                    <input type="submit"></input>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<br>
+<div class="row1" >
+    <br>
+    <div class="item1">
+        <img src="static/images/{{ 'silvermacbookair.jpg'}}" height="242.969px" width="418.966px">
+        <div class="row1description">
+            <br>
+            Silver<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="item1" >
+        <img src="static/images/{{ 'macbookair.jpg'}}" height="242.969px" width="418.966px">
+        <div class="row1description">
+            <br>
+            Gold<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="item1" >
+        <img src="static/images/{{ 'spacegrayair.jpg'}}" height="242.969px" width="418.966px">
+        <div class="row1description">
+            <br>
+            Space gray<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

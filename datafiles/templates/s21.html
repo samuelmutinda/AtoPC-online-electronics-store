@@ -1,0 +1,70 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>galaxy S21</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<h2><br>Pick a model<br><br></h2>
+<div class="row1">
+    <br>
+    <div class="item1">
+        <br><br><br><br>
+        <a href="{{ url_for('bases21page') }}"><img src="static/images/{{ 'phantomviolet.jpg'}}" width="353.5px" height="460.5px"></a>
+        <div class="row1description">
+            <br><br>
+            Galaxy S21<br><br>
+            6.2" Super Amoled Display<br><br>
+            Qualcomm Snapdragon 888 5G<br><br>
+            5G Capable<br><br>
+            Triple 64mp Cameras<br><br>
+            Phantom violet, Phantom pink,<br><br> Phantom white, Phantom gray<br><br>
+            <div class="buyitem">From Ksh80,000 or<br><br>Ksh6,667 per month&nbsp;<a href="{{ url_for('bases21page') }}"><br><br>Buy ></a></div>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="item1">
+        <br><br>
+        <a href="{{ url_for('s21pluspage') }}"><img src="static/images/{{ 'phantomwhite.png'}}" width="393.5px" height="490.5px"></a>
+        <div class="row1description">
+            <br>
+            Galaxy S21+<br><br>
+            6.7" Super Amoled Display<br><br>
+            Qualcomm Snapdragon 888 5G<br><br>
+            5G Capable<br><br>
+            Triple 64mp Cameras<br><br>
+            Phantom black, Phantom violet<br><br> Phantom silver<br><br>
+            <div class="buyitem">From Ksh100,000 or<br><br>Ksh8,334 per month &nbsp;<a href="{{ url_for('s21pluspage') }}"><br><br>Buy ></a></div>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="item1">
+        <br><br>
+        <a href="{{ url_for('s21ultrapage') }}"><img src="static/images/{{ 'phantomblack.png'}}" width="393.5px" height="490.5px"></a>
+        <div class="row1description">
+            <br><br>
+            Galaxy S21 ultra<br><br>
+            6.8" Super Amoled Display<br><br>
+            Qualcomm Snapdragon 888 5G<br><br>
+            5G Capable<br><br>
+            Quad 108mp Cameras<br><br>
+            Phantom silver, Phantom black<br><br>
+            <div class="buyitem">From Ksh120,000 or<br><br>Ksh10,000 per month &nbsp;<a href="{{ url_for('s21ultrapage') }}"><br><br>Buy ></a></div>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

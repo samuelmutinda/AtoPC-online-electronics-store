@@ -1,0 +1,78 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>Note 20 ultra</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+
+<h2><br>Configure your Note 20 ultra<br><br></h2>
+<div class = "configandcheckout">
+    <div class="configs">
+        <form method="POST" class="configcolor">
+            <h2>Pick a color:</h2><br>
+            <input type="radio" id="configbuttons" name="20ultracolor" value="mystic white">
+            <label for="mystic white">Mystic white</label><br><br>
+            <input type="radio" id="configbuttons" name="20ultracolor" value="mystic black">
+            <label for="mystic black">Mystic black</label><br><br>
+            <input type="radio" id="configbuttons" name="20ultracolor" value="mystic bronze">
+            <label for="mystic bronze">Mystic bronze</label><br><br>
+            <br>
+            <br>
+            <h2>Choose your storage:</h2><br>
+            <input type="radio" id="configbuttons" name="20ultrastorage" value="128gb">
+            <label for="128gb">128GB</label><br><br>
+            <input type="radio" id="configbuttons" name="20ultrastorage" value="256gb">
+            <label for="256gb">256GB</label><br><br>
+            <input type="radio" id="configbuttons" name="20ultrastorage" value="512gb">
+            <label for="512gb">512GB<br><br></label>
+            <div class="submitencompass">
+                <div class="submitbutton"><br><br>
+                    <input type="submit"></input>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<br>
+<div class="row1">
+    <br>
+    <div class="item1">
+        <img src="static/images/{{ 'note20.jpeg'}}" width="253.5px" height="380.5px">
+        <div class="row1description">
+            <br>
+            Mystic Bronze<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="item1">
+        <img src="static/images/{{ 'note20ultramysticblack.png'}}" width="313.5px" height="380.5px">
+        <div class="row1description">
+            <br>
+            Mystic black<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="item1">
+        <img src="static/images/{{ 'mysticwhite.jpg'}}" width="383.5px" height="380.5px">
+        <div class="row1description">
+            <br>
+            Mystic white<br><br>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}
